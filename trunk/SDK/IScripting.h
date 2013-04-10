@@ -29,7 +29,7 @@ class IScripting
 public:
 	/* 
 	 * LoadScript
-	 * @param szString - name of string without lua extension [const char *]
+	 * @param szString - name of script without lua extension [const char *]
 	 * @return boolean state of loading script
 	 */
 	virtual bool LoadScript(const char * szString) = 0;
