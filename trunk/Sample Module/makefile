@@ -1,20 +1,20 @@
-CC=g++
+CXX=g++
 #-m32
-CFLAGS=-c -g -w -Wall -I../SDK/ -I./ 
+CXXFLAGS=-c -g -w -Wall -I../SDK/ -I./ 
 LDFLAGS=-shared -s
 SOURCES=$(wildcard *.cpp)
 SOURCES+=$(wildcard ../SDK/*.cpp)
 
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=simple.so
+EXECUTABLE=sample.so
 
 all: $(SOURCES) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(OBJECTS) $(LDFLAGS) -g -o  $@ 
+	$(CXX) $(OBJECTS) $(LDFLAGS) -g -o  $@ 
 
 .cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
+	$(CXX) $(CXXFLAGS) $< -o $@
 
 clean:
 	rm -Rf $(OBJECTS) $(EXECUTABLE)
