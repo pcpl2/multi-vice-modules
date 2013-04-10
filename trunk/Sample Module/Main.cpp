@@ -5,20 +5,42 @@
 #endif
 #include <MultiVice.h>
 
+MultiVice::LUA * g_pLUA = 0;
+
 int TestCall(MultiVice::LUA * test)
 {
 	test->PushInteger(10);
 	return 1;
 }
 
+void CallSomething()
+{
+	g_pLUA->GetGlobal("onSampleModuleSaySomething");
+
+	if(g_pLUA->GetType(-1) != MultiVice::FUNCTION)
+	{
+		g_pLUA->Pop(-1);
+		return;
+	}
+
+	g_pLUA->PushString("Hello World");
+	g_pLUA->Call(1,1);
+	MultiVice::sdk.ConsoleOutput("Scripts reply > %s", g_pLUA->GetString(-1));
+}
+
 EXPORT void ModuleStart()
 {
+	g_pLUA = MultiVice::sdk.interfaces.scripting->GetLUA();
 	MultiVice::sdk.ConsoleOutput("Sample module started!");
 
-	MultiVice::sdk.interfaces.scripting->GetLUA().PushInteger(32);
-	MultiVice::sdk.interfaces.scripting->GetLUA().SetGlobal("TestModuleDefinition");
+	g_pLUA->PushInteger(32);
+	g_pLUA->SetGlobal("TestModuleDefinition");
 
 	MultiVice::sdk.interfaces.scripting->RegisterFunction("test",TestCall);
+
+	CallSomething();
+
+	MultiVice::sdk.interfaces.scripting->DestroyLUA(g_pLUA);
 }
 
 #ifdef _WIN32

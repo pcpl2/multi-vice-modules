@@ -77,12 +77,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\MultiVice.cpp" />
+    <ClCompile Include="..\SDK\MultiVice.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\IScripting.h" />
-    <ClInclude Include="..\MultiVice.h" />
+    <ClInclude Include="..\SDK\IScripting.h" />
+    <ClInclude Include="..\SDK\MultiVice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

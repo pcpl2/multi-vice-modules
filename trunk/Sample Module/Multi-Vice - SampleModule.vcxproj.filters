@@ -24,15 +24,15 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\MultiVice.cpp">
+    <ClCompile Include="..\SDK\MultiVice.cpp">
       <Filter>Source Files\SDK</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\IScripting.h">
+    <ClInclude Include="..\SDK\IScripting.h">
       <Filter>Header Files\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="..\MultiVice.h">
+    <ClInclude Include="..\SDK\MultiVice.h">
       <Filter>Header Files\SDK</Filter>
     </ClInclude>
   </ItemGroup>
