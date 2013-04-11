@@ -112,14 +112,7 @@ public:
 	 * @param null
 	 * @return LUA pointer
 	 */
-	virtual MultiVice::LUA * GetLUA() { return new MultiVice::LUA(); };
-
-	/*
-	 * DestroyLUA
-	 * @param pLUA - lua pointer to destroy [MultiVice::LUA  *]
-	 * @return none
-	 */
-	void DestroyLUA(MultiVice::LUA * pLUA) {};
+	virtual MultiVice::LUA * GetLUA() { return 0; };
 };
 
 #endif
