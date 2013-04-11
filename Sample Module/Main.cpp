@@ -39,8 +39,6 @@ EXPORT void ModuleStart()
 	MultiVice::sdk.interfaces.scripting->RegisterFunction("test",TestCall);
 
 	CallSomething();
-
-	MultiVice::sdk.interfaces.scripting->DestroyLUA(g_pLUA);
 }
 
 #ifdef _WIN32
