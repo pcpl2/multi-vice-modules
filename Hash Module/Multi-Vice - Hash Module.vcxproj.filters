@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\MultiVice.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="md2\md2.c">
+      <Filter>Source Files\md2</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\md4.c">
+      <Filter>Source Files\md4</Filter>
+    </ClCompile>
+    <ClCompile Include="md5\md5.c">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1\sha1.cpp">
+      <Filter>Source Files\sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="sha2\sha4.c">
+      <Filter>Source Files\sha2</Filter>
+    </ClCompile>
+    <ClCompile Include="sha2\sha2.c">
+      <Filter>Source Files\sha2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SDK\MultiVice.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\IScripting.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="md2\md2.h">
+      <Filter>Header Files\md2</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\md4.h">
+      <Filter>Header Files\md4</Filter>
+    </ClInclude>
+    <ClInclude Include="md5\md5.h">
+      <Filter>Header Files\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1\sha1.h">
+      <Filter>Header Files\sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="sha2\sha2.h">
+      <Filter>Header Files\sha2</Filter>
+    </ClInclude>
+    <ClInclude Include="sha2\sha4.h">
+      <Filter>Header Files\sha2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c0a77bc4-35a0-44bf-82db-db163481bd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{087bc370-933f-40c2-a17e-41591e2e144b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md2">
+      <UniqueIdentifier>{e1f60564-a5aa-48e5-9670-5dc4edfb2b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md2">
+      <UniqueIdentifier>{9fe22e0c-32f3-4135-80ff-39ee7defc108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md4">
+      <UniqueIdentifier>{a9e75bae-974b-4106-98f7-f15def1161a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md4">
+      <UniqueIdentifier>{514f4347-ad85-4573-b15b-cd57d5c922a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md5">
+      <UniqueIdentifier>{a05ac205-557e-45bd-a17e-c5b9f72699a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md5">
+      <UniqueIdentifier>{2ab37bb9-d63e-444b-87d5-79142343784c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sha1">
+      <UniqueIdentifier>{5ac3c4ca-fb5f-4745-87de-2bff0c321cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sha1">
+      <UniqueIdentifier>{4cd773ac-1fb4-464c-8f1e-345aa00d989b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sha2">
+      <UniqueIdentifier>{6bea2ba5-e932-42fa-834a-0e1903564e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{1012cfb2-c408-4063-a3bb-ec3737d8b1ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{2b6e17c1-1edf-4087-b655-e45f2bfd3e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sha2">
+      <UniqueIdentifier>{7cf637ab-91bb-4273-b425-76e782f14119}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
