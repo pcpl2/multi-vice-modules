@@ -321,7 +321,7 @@ void sha1_finish( sha1_context *ctx, ShaBuffer output)
         for(i = 0; i < 20; i++)
         {
                 char str[3];
-				sprintf_s(str, 3, "%2.2x", (unsigned char)buffer[i]);
+				sprintf(str, "%2.2x", (unsigned char)buffer[i]);
                 strcat((char*)output, str);
         }
         output[SHA_HASH_LENGTH] = '\0';
