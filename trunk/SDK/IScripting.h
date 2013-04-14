@@ -31,6 +31,10 @@ enum eLUAObjectType
 	THREAD
 };
 
+#ifndef size_t
+typedef unsigned int size_t;
+#endif
+
 class LUA
 {
 public:

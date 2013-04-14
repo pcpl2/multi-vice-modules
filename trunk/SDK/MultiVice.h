@@ -9,7 +9,6 @@
 #ifndef _MULTIVICE_H_
 #define _MULTIVICE_H_
 
-
 #define MULTI_VICE_SDK_VERSION	0x001
 
 #if defined(_MSC_VER)

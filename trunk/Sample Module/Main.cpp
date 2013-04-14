@@ -1,5 +1,6 @@
 // SampleModule for Multi-Vice 0.1d
 // Created by RootKiller (06.04.2013, 02:32)
+#include <stdio.h>
 #ifdef _WIN32
 #include <Windows.h>
 #endif
