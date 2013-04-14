@@ -25,8 +25,6 @@
 #ifndef _SHA1_H
 #define _SHA1_H
 
-#define sprintf_s sprintf
-
 #include <stdio.h>
 
 typedef unsigned int uint32_t;
